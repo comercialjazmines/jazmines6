@@ -1,0 +1,1000 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Acerca de Nosotros</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon"  href="{% static 'images/favicon.ico' %}">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Resort Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="{% static 'css/flexslider.css' %}" type="text/css" media="screen" property="" />
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/zoomslider.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/zoomslider.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+ <link href="{% static 'css/w3.css' %}" rel="stylesheet">
+
+<script type="text/javascript" src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+
+<!--/web-fonts-->
+<link href="//fonts.googleapis.com/css?family=Dosis:200,300,400,500,600" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+<!--//web-fonts-->
+</head>
+
+<body>
+<!--/main-header--
+  <div class="w3layouts-top-strip">
+			<div class="top-srip-agileinfo">
+				<div class="w3ls-social-icons text-left">
+					<a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+					<a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+					<a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a>
+					<a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+					
+				</div>
+				<div class="agileits-contact-info text-right">
+					<ul>
+						<li><i class="fa fa-volume-control-phone" aria-hidden="true"></i> +096 3641265</li>
+						<li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com">comerciajazmines@gmail.com</a></li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+  <!--/banner-section-->
+	<div id="demo-1" class="banner-inner">
+		<!--/header-w3l-->
+			   <div class="header-w3-agileits" id="home">
+			     <div class="inner-header-agile">	
+								<nav class="navbar navbar-default">
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									<h1><a  href="{% url 'index'  %}"><img class="logo" src="{% static 'images/jazmines.jpg' %}" style="width: 160px; height: auto;"></a>
+										 
+										</h1>
+									</div>
+									<!-- navbar-header -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+										
+				           <ul class="nav navbar-nav">
+											    <li class="active"><a class="list_item" href="{% url 'index' %}">Inicio</a></li>
+												<li><a  class="list_item" href="{% url 'about' %}">Quienes Somos</a></li>
+												<li><a class="list_item" href="{% url 'planes' %}">Planes</a></li>
+												<li><a  class="list_item"href="{% url 'gallery' %}">Parque Cementerio</a></li>
+
+												 <li class="dropdown">
+													<a class="list_item" href="#" class="dropdown-toggle hvr-bounce-to-bottom" data-hover="Pages" data-toggle="dropdown" aria-expanded="false">Mas Beneficios <b class="caret"></b></a>
+													 <ul class="dropdown-menu">
+														<li><a href="{% url 'alianzas' %}">Alianzas</a></li>
+
+
+
+													</ul>
+												</li>
+
+												<li><a class="list_item" href="{% url 'contacto' %}">Contacto</a></li>
+												<li><a class="list_item" href="{% url 'login' %}">Iniciar-Sesion</a></li>
+
+
+										</ul>
+
+
+
+									</div>
+									<div class="clearfix"> </div>	
+								</nav><!--
+									<div class="w3ls_search">
+													<div class="cd-main-header">
+														<ul class="cd-header-buttons">
+															<li><a class="cd-search-trigger" href="#cd-search"> <span></span></a></li>
+														</ul> <!-- cd-header-buttons -->
+													</div><!--
+													<div id="cd-search" class="cd-search">
+														<form action="#" method="post">
+															<input name="Search" type="search" placeholder="Search...">
+														</form>
+													</div>
+												</div>-->
+					
+							</div> 
+
+			
+		<!--//header-w3l-->
+		</div>
+		 </div>
+  <!--/banner-section-->
+ <!--//main-header-->
+    <!-- breadcrumb -->
+	<div class="w3_breadcrumb">
+	<div class="breadcrumb-inner">	
+			<ul>
+				<li><a href="{% url 'index' %}"></a> <i></i></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+<!-- //breadcrumb -->
+			<!--/content-inner-section-->
+				<div class="w3_content_agilleinfo_inner">
+					<div class="container">
+                         <div id="cotizarbot">
+		<a class="botton-cot list_item" onclick="document.getElementById('id02').style.display='block'"></a>
+              </div>
+					      <div class="inner-agile-w3l-part-head">
+					            <h2 class="w3l-inner-h-title" style="color: #B38F47">Historia</h2>
+							</div>
+							<div class="ab-w3l-spa">
+							 <img src="{% static 'images/2.jpg' %}" alt="" class="img-responsive" />
+								<p>EXEQUIALES LOS JAZMINES S.A.S, es una Sociedad consolidada en el Sector Funerario desde el 2004 por Fernando Antonio Giraldo Delgado y un grupo de inversionistas. La Sociedad inauguró las Salas de Velación más modernas del Eje Cafetero caracterizadas por su sobrio diseño y ha sido un buen elemento para que fijen sus preferencias en estas instalaciones que marcan la diferencia.<br>  
+
+								Construyeron el Parque Cementerio Los Jazmines, ubicado en el KM. 3 VIA SANTA ROSA DE CABAL - CHINCHINA, un lugar pensado para entregar, a quienes visitan el lugar, tranquilidad, paz, un espacio totalmente natural y con un diseño pensado para la satisfacción total de sus afiliados y servicio de cremación para los habitantes de la región.<br>
+
+								En el mes de Septiembre del año 2006, incursionaron en el municipio de Chinchiná (Cds.) La expansión comercial de la Empresa continuó en el municipio de Dosquebradas, alternando también con algunos sectores de Pereira y  la población de Arauca (Cds). <br> 
+
+								En el 2010 se incorpora a la sociedad José William Bedoya González, fundador y dueño de Funeraria La Inmaculada, gran fusión que impulsa el posicionamiento de Jazmines en Pereira, Chinchiná y Santa Rosa de cabal principalmente.<br>
+
+								En el presente, sigue siendo la empresa de preferencia de la región, resaltando siempre la importancia por los afiliados y constantes trabajos por generar nuevos y mayores beneficios tanto para sus colaboradores, quienes son su capital más importante, como para sus afiliados y los habitantes en general de esta pujante región quienes son la razón de ser.  </p>
+
+
+
+								
+							</div>
+
+			<div class=" container ab-w3l-spa">
+				<div class="row">
+				       	<div class="col-sm-3 col-md-6 ">
+
+				
+						<h4 class="tituloa" > MISION </h4>
+					
+						<p> Ser una Empresa dinámica, con sentido social y humano, orientada a la solución integral mediante la prestación de Servicios Exequiales. Nuestro propósito es la satisfacción de nuestros clientes, contribuyendo a la tranquilidad, seguridad y mejoramiento de la calidad de vida de la familia Colombiana.</p>
+
+						</div>
+						<div class="col-sm-3 col-md-6 ">
+					
+						<h4 class="tituloa" >VISION</h4>
+								
+									<p>Convertirse en un período de 5 años en una de las Empresas líderes en el Occidente Colombiano,  mas sólida, con niveles óptimos de calidad en la Prestación de Servicios, innovando en tecnología, con metodologías propias de desarrollo y augurando nuestra expansión en el territorio Nacional.</p>	
+						
+								
+							</div>
+				   </div>
+				   
+				   	<div class="container">	
+				   	<div class="row">
+				    <div class="inner-agile-w3l-part-head">
+					            <h2 class="w3l-inner-h-title" style="color: #B38F47">VALORES CORPORTATIVOS</h2>
+							</div>
+								<!-- services -->
+							<div class="w3a_agileits_services_grids">
+								<!--<div class="col-md-3 w3_agileits_services_grid hvr-overline-from-center">
+									<div class="w3_agileits_services_grid_agile">
+										<div class="w3_agileits_services_grid_1">
+											<img src="images/5.jpg" alt="service-img">
+										</div>
+										<h3>Deluxe Room</h3>
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+									</div>
+								</div>-->
+								<div class="col-md-4 w3a_agileits_services_grid hvr-overline-from-center high">
+									<div class="w3b_agileits_services_grid_agile">
+                                        <b><h3 style="color: #B38F47">Cordialidad</h3></b>
+										<p>En nuestro equipo, la CORDIALIDAD tanto interna, como externa es pilar de nuestro servicio.</p>
+									</div>
+								</div>
+								<div class="col-md-4 w3a_agileits_services_grid hvr-overline-from-center high">
+									<div class="w3b_agileits_services_grid_agile">
+										<b><h3 style="color: #B38F47">Solidaridad</h3></b>
+										<p>Justo en los momentos más difíciles buscamos estar en el lugar del afiliado para generar un sentido de SOLIDARIDAD con nuestros clientes</p>
+									</div>
+								</div>
+								<div class="col-md-3 w3a_agileits_services_grid hvr-overline-from-center high">
+									<div class="w3b_agileits_services_grid_agile">
+										
+                                        <b><h3 style="color: #B38F47">Respeto</h3></b>
+										<p>Fundamental  RESPETO por la diferencia lo que nos hace una empresa Incluyente.  </p>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+								<br>
+							</div>
+							<div class="w3_agileits_services_grids">
+								<!--<div class="col-md-3 w3_agileits_services_grid hvr-overline-from-center">
+									<div class="w3_agileits_services_grid_agile">
+										<div class="w3_agileits_services_grid_1">
+											<img src="images/5.jpg" alt="service-img">
+										</div>
+										<h3>Deluxe Room</h3>
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+									</div>
+								</div>-->
+								<div class="col-md-4 w3a_agileits_services_grid hvr-overline-from-center high">
+									<div class="w3b_agileits_services_grid_agile">
+                                        <b><h3 style="color: #B38F47">Responsabilidad</h3></b>
+										<p>Cumplidores de nuestras obligaciones y de los deseos de nuestros clientes nos hacen una empresa con gran sentido de la RESPONSABILIDAD.</p>
+									</div>
+								</div>
+								<div class="col-md-4 w3a_agileits_services_grid hvr-overline-from-center high">
+									<div class="w3b_agileits_services_grid_agile">
+                                        <b><h3 style="color: #B38F47">Compromiso</h3></b>
+										<p>Transformamos una promesa en realidad, es el triunfo de la Integridad que se traduce en COMPROMISO.</p>
+									</div>
+								</div>
+								<div class="col-md-4 w3a_agileits_services_grid hvr-overline-from-center high">
+									<div class="w3b_agileits_services_grid_agile">
+										
+                                        <b><h3 style="color: #B38F47">Dignidad</h3></b>
+										<p>Enaltecemos los preceptos, valores y derechos, pensando en la DIGNIDAD del ser humano.</p>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<br>
+
+					 <div class="inner-agile-w3l-part-head">
+					            <h2 class="w3l-inner-h-title "style="color: #B38F47">NUESTRO EQUIPO</h2>
+							</div>
+							<br>
+					<div class="ab-w3l-spa">
+							 <img src="{% static 'images/2.jpg' %}" alt="" class="img-responsive" />
+								<p>Nuestro capital más importante es el equipo de colaboradores, personas altamente enfocadas al servicio y dispuestas siempre a entregar lo mejor a la comunidad, con calidez, respeto, tolerancia y lo más importante, pasión por lo que hacen. </p>
+
+					</div>
+					</div>
+					</div>
+
+                    <div class="w3-container">
+
+
+
+
+                                <div id="id02" class="w3-modal">
+                                 <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                                  <header class="w3-container w3-green">
+                                   <span onclick="document.getElementById('id02').style.display='none'"
+                                   class="w3-button w3-green w3-large w3-display-topright">&times;</span>
+                                   <h2>SOLICITUD DE SERVICIO</h2>
+                                  </header>
+
+
+
+                           <div id="London" class="w3-container city">
+                                     <h5 class="w3-center w3-padding-32" style="text-transform:none">Ingrese el numero de identificacion para realizar tu solicitud de servicio</h5>
+                                   <div class="form-group ">
+                                       <div class="col-md-6 col-md-offset-3">
+                                           <input type="text"  align="middle" class="form-control" id="jq-validation-email" name="jq-validation-email" placeholder="Digite el numero de identificacion">
+                                       </div>
+                                   </div>
+                                  </div>
+
+
+
+                                  <div class="w3-container w3-white w3-padding-32">
+
+                                    <div class="w3-center">
+
+
+                                    <button class="w3-button  w3-green w3-border"
+                                   onclick="document.getElementById('id03').style.display='block'">INTERFAZ PARA AFILIADOS</button>
+                                      <button class="w3-button  w3-green w3-border"
+                                   onclick="document.getElementById('id04').style.display='block'">INTERFAZ PARA NO AFILIADOS</button>
+                                       </div>
+
+                                  </div>
+                                 </div>
+                                </div>
+
+                                </div>
+
+
+                                <script>
+                                document.getElementsByClassName("tablink")[0].click();
+
+                                function openCity(evt, cityName) {
+                                  var i, x, tablinks;
+                                  x = document.getElementsByClassName("city");
+                                  for (i = 0; i < x.length; i++) {
+                                    x[i].style.display = "none";
+                                  }
+                                  tablinks = document.getElementsByClassName("tablink");
+                                  for (i = 0; i < x.length; i++) {
+                                    tablinks[i].classList.remove("w3-light-grey");
+                                  }
+                                  document.getElementById(cityName).style.display = "block";
+                                  evt.currentTarget.classList.add("w3-light-grey");
+                                }
+                                </script>
+
+                                        <div class="w3-container">
+
+
+
+                                  <div id="id03" class="w3-modal">
+                                    <div class="w3-modal-content w3-animate-top w3-card-4">
+                                      <header class="w3-container w3-green">
+                                        <span onclick="document.getElementById('id03').style.display='none'"
+                                        class="w3-button w3-display-topright">&times;</span>
+                                        <h3>CONFIRMACION DE SOLICITUD</h3>
+
+                                      </header>
+                                        <div class="w3-container w3-padding-16 w3-center">
+
+                                              <i class="fa fa-check-circle-o w3-text-green" aria-hidden="true" style="font-size: 9em"></i>
+
+
+                                      </div>
+                                      <div class="w3-container w3-padding-small ">
+                                        <h5 class="w3-center" style="text-transform:none">
+                                            Señor <span style="font-weight: bold">PABLO</span>, desde ya estamos trabajando para brindarle la
+                                            ayuda que necesita en estos momentos</h5>
+                                          <h5 class="w3-center w3-padding-small" style="text-transform:none">
+                                              En breve nos comunicaremos con usted.</h5>
+
+                                      </div>
+                                      <footer class="w3-container w3-white w3-padding-16">
+                                         <a href="{% url 'index' %}"> <button class="w3-button w3-center w3-green w3-border "
+                                    >ACEPTAR</button></a>
+                                      </footer>
+                                    </div>
+                                  </div>
+                                        </div>
+
+                                 <div class="w3-container">
+
+
+
+
+                                <div id="id04" class="w3-modal">
+                                 <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                                  <header class="w3-container w3-green">
+                                   <span onclick="document.getElementById('id04').style.display='none'"
+                                   class="w3-button w3-green w3-large w3-display-topright">&times;</span>
+                                   <h3>BIENVENIDO A EXEQUIALES LOS JAZMINES</h3>
+                                  </header>
+
+
+
+                                  <div id="London" class="w3-container city">
+                                     <h3 class="w3-padding-16 w3-center w3-center" style="text-transform:none; font-weight: bold">Parece que eres nuevo por aqui</h3>
+                                       <h5 class="w3-padding-16 w3-center w3-center" style="text-transform:none">Dejanos tus datos  y en breve un accesor exequial se pondra en contacto contigo para ayudarte</h5>
+                                 <div class="form-group">
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="jq-validation-email" name="jq-validation-email" placeholder="Nombre Completo">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="jq-validation-email" name="jq-validation-email" placeholder="Numero de celular o fijo">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="jq-validation-email" name="jq-validation-email" placeholder="Correo Electronico">
+								</div>
+                                  </div>
+
+
+
+                                  <div class="w3-container w3-white w3-padding">
+
+                                    <div class=" w3-padding-16">
+                                    <label class="w3-left">
+					            <input name="suscribe" value="1" checked="checked" type="checkbox" autocomplete="off">
+					             Acepto los <a style="color: #00ACEE; " href="{% url 'terminos' %}" target="_blank" >terminos y condiciones</a>
+                                        de la politica de tratamiento de datos personales</label>
+                                    </div>
+                                       <div class=" w3-padding-16">
+                                    <div class="w3-padding-16 w3-center">
+                                 <a href="{% url 'index' %}"> <button class="w3-button  w3-green w3-border">ENVIAR</button></a>
+                                </div>
+                                       </div>
+
+                                  </div>
+                                 </div>
+                                </div>
+
+                                </div>
+                                </div>
+
+					
+					 <div class="inner-agile-w3l-part-head">
+					            <h2 class="w3l-inner-h-title direct">DIRECTORIO</h2>
+							</div>
+							<br>
+					<div class="tablesuccess">
+									<div class="tableheader">
+										<div class="tablecaption">
+											SEDE SANTA ROSA-CARRERA 15 NO. 16-22
+										</div>
+									</div>
+									<table class="tablee tablebordered">
+										<thead>
+											<tr>
+												<th class="phones">TELEFONO</th>
+												<th class="phones">EXTENSION</th>
+												<th class="area">DEPARTAMENTO</th>
+												<th class="celphone">CELULAR</th>
+												<th class="email">CORREO</th>
+											 </tr>
+										</thead>
+										<tbody>
+											<td class="phone">3641265</td>
+							<td class="phone">11</td>
+							<td>Informacion General</td>
+							<td class="celphone"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="phone">3641265</td>
+							<td class="phone"></td>
+							<td>Informacion Comercial, Afiliaciones y Parque Cementerio</td>
+							<td class="celphone">3104737252</td>
+							<td>comercialjazmines@gmail.com</td>
+						</tr>
+						<tr>
+							<td class="phone">3641265</td>
+							<td class="phone">14</td>
+							<td>Facturacion</td>
+							<td class="celphone"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="phone">3641265</td>
+							<td class="phone">15</td>
+							<td>Salas de Velacion</td>
+							<td class="celphone"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="phone">3641265</td>
+							<td class="phone">16</td>
+							<td>Tesoreria</td>
+							<td class="celphone"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="phone">3641265</td>
+							<td class="phone">17</td>
+							<td>Cartera</td>
+							<td class="celphone">3104127742</td>
+							<td>dtocartera.exequialesloisjazmines@hotmail.com</td>
+						</tr>
+						<tr>
+							<td class="phone">3641265</td>
+							<td class="phone">18</td>
+							<td>Servicios Exequiales</td>
+							<td class="celphone"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="phone">3641265</td>
+							<td class="phone">19</td>
+							<td>Direccion Administrativa</td>
+							<td class="celphone"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="phone">3641265</td>
+							<td class="phone">20</td>
+							<td>Fax</td>
+							<td class="celphone"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="phone">3641265</td>
+							<td class="phone">22</td>
+							<td>Modificaciones</td>
+							<td class="celphone"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="phone">3641265</td>
+							<td class="phone">23</td>
+							<td>Gerencia</td>
+							<td class="celphone"></td>
+							<td>gerencia.exequialeslosjazmines@hotmail.com</td>
+						</tr>
+						<tr> 
+							<td class="phone">3641265</td>
+							<td class="phone"></td>
+							<td>Servicios exequiales, quejas, sugerencias y/o felicitaciones (Linea 24 Horas</td>
+							<td class="celphone">3104129835</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td colspan="3">SEDE CHINCHINA CARRERA 9 NO. 14-07</td>
+							<td class="celphone"> 3104143192</td>
+							<td></td>
+						</tr>
+										</tbody>
+									
+									</table>
+								</div>
+								
+
+				<!-- //services -->
+				
+				         <!--  <div class="agileinf-button">    <a class="read" href="single.html">
+											
+							   </a>
+							   </div>-->
+
+					</div>
+                    </div>
+                    </div>
+	  <!-- welcome --
+		
+			<div class="spa-agile">
+			<h3 class="tittle fea">Featured  Services</h3>
+				<div class="col-md-3 spa-grid">
+					
+						<i class="fa fa-cutlery" aria-hidden="true"></i>
+					
+						<h4>Restaurant </h4>
+					
+				</div>
+				<div class="col-md-3 spa-grid">
+					
+					<i class="fa fa-glass" aria-hidden="true"></i>
+					
+					
+						<h4>Bar</h4>
+						
+				
+				</div>
+				<div class="col-md-3 spa-grid lost">
+					
+						<i class="fa fa-wheelchair-alt" aria-hidden="true"></i>
+					
+						<h4>Gym</h4>
+						
+					
+				</div>
+				<div class="col-md-3 spa-grid lost">
+					
+					<i class="fa fa-car" aria-hidden="true"></i>
+					
+					
+						<h4>Pick Up</h4>
+						
+				
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		
+	<!-- //welcome --
+	</div>
+</div>
+	 <div class="team-section">
+	 		      <div class="container">
+				  <h3 class="tittle">Our Team</h3>
+		      <div class="team-row">
+				<div class="col-md-3 team-grids">
+					<div class="team-img">
+						<img class="img-responsive" src="images/t1.jpg" alt="">
+						<div class="captn">
+							<ul class="top-links">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									
+									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								</ul>
+						
+						</div>
+					</div>
+					<div class="team-agile">
+						<h4>Sophia</h4>
+						
+					</div>
+				</div>
+				<div class="col-md-3 team-grids">
+					<div class="team-img">
+						<img class="img-responsive" src="images/t2.jpg" alt="">
+						<div class="captn">
+							<ul class="top-links">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									
+									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								</ul>
+						
+						</div>
+					</div>
+					<div class="team-agile">
+						<h4>Michael</h4>
+						
+					</div>
+				</div>
+				<div class="col-md-3 team-grids">
+					<div class="team-img">
+						<img class="img-responsive" src="images/t3.jpg" alt="">
+						<div class="captn">
+							<ul class="top-links">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									
+									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								</ul>
+						
+						</div>
+					</div>
+					<div class="team-agile">
+						<h4>Jessica</h4>
+						
+					</div>
+				</div>
+				<div class="col-md-3 team-grids">
+					<div class="team-img">
+						<img class="img-responsive" src="images/t4.jpg" alt="">
+						<div class="captn">
+							<ul class="top-links">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									
+									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								</ul>
+						
+						</div>
+					</div>
+					<div class="team-agile">
+						<h4>Edwards</h4>
+						
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div> 
+		</div>	
+</div>			
+	<!-- /plans --
+      <div class="plans-section">
+				 <div class="container">
+				 <h3 class="w3l-inner-h-title">Rates and Booking</h3>
+						<div class="priceing-table-main">
+				 <div class="col-md-3 price-grid">
+					<div class="price-block agile">
+						<div class="price-gd-top pric-clr1">
+							<h4>SINGLE ROOM</h4>
+							<h3><span>$</span>79</h3>
+							<h5>1 Night</h5>
+						</div>
+						<div class="price-gd-bottom">
+							   <div class="price-list">
+								
+									<ul>
+											<li><i class="fa fa-star" aria-hidden="true"></i></li>
+											<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+											<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+											<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+											<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+									
+								     </ul>
+									 <h6 class="bed"><i class="fa fa-bed" aria-hidden="true"></i></h6>
+							</div>
+							<div class="price-selet pric-sclr1">		    			   
+								<a href="#" data-toggle="modal" data-target="#myModal1" >Book Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 price-grid ">
+					<div class="price-block agile">
+						<div class="price-gd-top pric-clr2">
+							<h4>THE COTTAGE</h4>
+							<h3><span>$</span>119</h3>
+							<h5>1 Night</h5>
+						</div>
+						<div class="price-gd-bottom">
+							<div class="price-list">
+								
+									<ul>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+									
+								</ul>
+								<h6 class="bed two"><i class="fa fa-bed" aria-hidden="true"></i></h6>
+								
+							</div>
+							<div class="price-selet pric-sclr2">
+								<a href="#" data-toggle="modal" data-target="#myModal1" >Book Now</a>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 price-grid lost">
+					<div class="price-block agile">
+						<div class="price-gd-top pric-clr3">
+							<h4>GUEST HOUSE</h4>
+							<h3><span>$</span>159</h3>
+							<h5>1 Night</h5>
+						</div>
+						<div class="price-gd-bottom">
+							<div class="price-list">
+								<ul>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+									
+								</ul>
+								<h6 class="bed three"><i class="fa fa-bed" aria-hidden="true"></i></h6>
+							</div>
+							<div class="price-selet pric-sclr3">
+								<a href="#" data-toggle="modal" data-target="#myModal1" >Book Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 price-grid wthree lost">
+					<div class="price-block agile">
+						<div class="price-gd-top pric-clr4">
+							<h4>THE SEA VILLA</h4>
+							<h3><span>$</span> 199</h3>
+							<h5>1 Night</h5>
+						</div>
+						<div class="price-gd-bottom">
+							<div class="price-list">
+								<ul>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+									
+								</ul>
+								<h6 class="bed four"><i class="fa fa-bed" aria-hidden="true"></i></h6>
+							</div>
+							<div class="price-selet pric-sclr4">
+								<a href="#" data-toggle="modal" data-target="#myModal1" >Book Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal1 --
+						<div class="modal fade" id="myModal1" role="dialog">
+							<div class="modal-dialog">
+							<!-- Modal content--
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4>Reservation Form</h4>
+											<div class="book-form-inner">
+
+											   <form action="#" method="post">
+													<div class="col-md-6 form-date-w3-agileits1">
+														<label><i class="fa fa-user" aria-hidden="true"></i> Name :</label>
+														<input type="text" name="name" placeholder="Your name" required="">
+													</div>
+													<div class="col-md-6 form-date-w3-agileits1 second-agile1">
+														<label><i class="fa fa-envelope" aria-hidden="true"></i> Email :</label>
+														<input type="email" name="email" placeholder="Your email" required="">
+													</div>
+													  <div class="col-md-6 form-date-w3-agileits">
+																<label><i class="fa fa-calendar" aria-hidden="true"></i> Arrival Date :</label>
+																<input  id="datepicker" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+															
+															</div>
+												<div class="col-md-6 form-time-w3layouts second-agile">
+														<label><i class="fa fa-clock-o" aria-hidden="true"></i> Time :</label>
+														<input type="time">
+												</div>
+												<div class="col-md-6 form-date-w3-agileits">
+															<label><i class="fa fa-calendar" aria-hidden="true"></i> Departure Date :</label>
+																<input  id="datepicker1" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+																
+															</div>
+													<div class="col-md-6 form-time-w3layouts1 second-agile1">
+															<label><i class="fa fa-clock-o" aria-hidden="true"></i> Time :</label>
+															<input type="time">
+													</div>
+													<div class="col-md-6 form-left-agileits-w3layouts1 bottom-w3ls1">
+															<label><i class="fa fa-home" aria-hidden="true"></i> Choose a Room :</label>
+															<select class="form-control">
+																<option></option>
+																<option>Standard Double Room</option>
+																<option>Standard Family Room</option>
+																<option>Garden Family Room</option>
+																<option>Deluxe Double Room</option>
+																<option>Executive Junior Suite</option>
+																<option>Maisonette</option>
+															</select>
+													</div>
+													<div class="col-md-6 form-left-agileits-w3layouts1 second-agile1">
+															<label><i class="fa fa-users" aria-hidden="true"></i> No.of People :</label>
+															<select class="form-control">
+																<option></option>
+																<option>1 Person</option>
+																<option>2 People</option>
+																<option>3 People</option>
+																<option>4 People</option>
+																<option>5 People</option>
+																<option>More</option>
+															</select>
+													</div>
+													<div class="clearfix"> </div>
+													<div class="make wow shake" data-wow-duration="1s" data-wow-delay=".5s">
+														  <input type="submit" value="Make a Reservation">
+													</div>
+											</form>
+								</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //Modal1 -->
+			
+			<!--//content-inner-section-->
+
+ <!-- Footer -->
+	<div class="w3l-footer">
+		<div class="container">
+         <div class="footer-info-agile row" >
+				<div class="col-md-4 footer-info-grid links">
+					<h4>links Rapidos</h4>
+					<ul>
+						       <li><a href="{% url 'index' %}">Inicio</a></li>
+								<li><a href="{% url 'about' %}">Acerca de Nosotros</a></li>
+								<li><a href="{% url 'planes' %}">Planes</a></li>
+								<li><a href="{% url 'gallery' %}">Parque Cementerio</a></li>
+								<li><a href="{% url 'contacto' %}">Contacto</a></li>
+								<li><a href="{% url 'terminos' %}">Terminos y Condiciones</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 footer-info-grid address">
+					<h4>DIRECCION</h4>
+					<address>
+						<ul>
+							<li>Colombia Risaralda</li>
+							<li>Carrera 15 #16-22, Santa Rosa de Cabal</li>
+							<li>Telefono: +57 (6) 3641265-3642205</li>
+							<li class="">Celular: 3104129835</li>
+							<li>Email : <a class="mail" href="mailto:mail@example.com">comercialjazminespc@gmail.com</a></li>
+						</ul>
+					</address>
+				</div>
+
+				<div class="col-md-4  footer-info-grid">
+				<div class="connect-social">
+					<h4>Conectate con nosotros</h4>
+					<section class="social">
+                        <ul>
+							<li><a class="icon fb" href="https://www.facebook.com/exequialeslosjazminess.a.s/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+
+							 <li><a class="icon it" href="https://www.instagram.com/parquecemeneriolosjazmines/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+
+
+							<li><a class="icon gp" href="https://plus.google.com/u/0/117740488235666769095" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+
+
+
+
+
+						</ul>
+					</section>
+
+				</div>
+					
+
+					
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="connect-agileits newsletter">
+				<h4>Quejas, recomendaciones y felicitaciones</h4>
+					<p>Danos tu opinion para mejorar nuestros servicios.
+					</p>
+					<form action="#" method="post" class="newsletter">
+						<input class="email" type="email" placeholder="Tu queja o sugerencia..." required="">
+						<input type="submit" class="submit" value="Enviar">
+					</form>
+			</div>
+	   </div>
+     </div>
+
+
+			<div class="w3agile_footer_copy">
+				    <p>Exequiales los Jazmines©2017 Reservados todos los derechos- Santa Rosa de Cabal-Risaralda- Colombia <a href="http://w3layouts.com/"></a></p>
+			</div>
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<script type="text/javascript" src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+	<!-- Dropdown-Menu-JavaScript -->
+			<script>
+				$(document).ready(function(){
+					$(".dropdown").hover(            
+						function() {
+							$('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+							$(this).toggleClass('open');        
+						},
+						function() {
+							$('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+							$(this).toggleClass('open');       
+						}
+					);
+				});
+			</script>
+		<!-- //Dropdown-Menu-JavaScript -->
+
+
+<script type="text/javascript" src="{% static 'js/jquery.zoomslider.min.js' %}"></script>
+		<!-- search-jQuery -->
+				<script src="{% static 'js/main.js' %}"></script>
+
+<!--/script-->
+			<!-- flexSlider -->
+					<script defer src="{% static 'js/jquery.flexslider.js' %}"></script>
+					<script type="text/javascript">
+					$(window).load(function(){
+					  $('.flexslider').flexslider({
+						animation: "slide",
+						start: function(slider){
+						  $('body').removeClass('loading');
+						}
+					  });
+					});
+				  </script>
+	<!-- Calendar -->
+				<link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}" />
+				<script src="{% static 'js/jquery-ui.js' %}"></script>
+				  <script>
+						  $(function() {
+							$( "#datepicker,#datepicker1,#datepicker2,#datepicker3" ).datepicker();
+						  });
+				  </script>
+			<!-- //Calendar -->
+<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+ <script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+<!--end-smooth-scrolling-->
+<!--js for bootstrap working-->
+	<script src="{% static 'js/bootstrap.js' %}"></script>
+<!-- //for bootstrap working -->
+
+</body>
+</html>

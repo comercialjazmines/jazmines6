@@ -31,7 +31,7 @@ urlpatterns = [
     url(r'^historico_eventos/$',historico_eventos, name="historico_eventos"),
     url(r'^modificar_eventos/$', modificar_eventos, name="modificar_eventos"),
     url(r'^modificar_obituarios/$', modificar_obituarios, name="modificar_obituarios"),
-    
+    url(r'^agregar_usuario/$', agregar_usuario, name="agregar_usuarios"),
 
 
 ]

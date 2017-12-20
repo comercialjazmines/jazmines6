@@ -30,6 +30,9 @@ Use search to find needed section.
 
 	<!-- Open Sans font from Google CDN -->
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin" rel="stylesheet" type="text/css">
+	<!--[if !IE]> -->
+	<script type="text/javascript"> window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js">'+"<"+"/script>"); </script>
+<!-- <![endif]-->
 
 	<!-- Pixel Admin's stylesheets -->
 	<link href="{% static 'assets/stylesheets/widgets.min.css' %}" rel="stylesheet" type="text/css">
@@ -398,6 +401,14 @@ Use search to find needed section.
 
 					</ul>
 				</li>
+				<li class="mm-dropdown">
+					<a href="#"><i class="menu-icon fa fa-check-square"></i><span class="mm-text">Usuarios</span></a>
+					<ul>
+						<li class="active">
+							<a tabindex="-1" href="{% url 'agregar_usuarios' %}"><span class="mm-text">agregar</span></a>
+						</li>
+						
+					</ul>
 				</li>
 				<li class="mm-dropdown">
 							<a href="#"><i class="menu-icon fa fa-envelope"></i><span class="mm-text">Eventos</span></a>
@@ -426,112 +437,60 @@ Use search to find needed section.
 
 	<div id="content-wrapper">
 <!-- 5. $CONTENT ===================================================================================-->
-
+							
+							<div class="panel">
+					<div class="panel-heading">
+						<span class="panel-title">HISTORICO OBITUARIOS</span>
+					</div>
 		
-							<div class="col-sm-6">
-								
-								<!-- Light table -->
-								<div class="table-success">
+							<div class="table-success">
 									<div class="table-header">
 										<div class="table-caption">
-											FABIO GONZALEZ
+											
 										</div>
 									</div>
 									<table class="table table-bordered">
-										
+										<thead>
+											<tr>
+												<th>NO.OBITUARIO</th>
+												<th>NOMBRE FALLECIDO</th>
+												<th>LUGAR VELACION</th>
+												<th>LUGAR EXEQUIAS</th>
+												<th>LUGAR DESCANSO</th>
+												<th>FECHA VELACION</th>
+												<th>FECHA EXEQUIAS</th>
+												<th>HORA VELACION</th>
+												<th>HORA EXEQUIAS</th>
+												<th>HORA DESCANSO</th>
+											</tr>
+										</thead>
 										<tbody>
 											<tr>
-										 				<td>
-										 					<strong>CIUDAD:</strong>
-										 				</td>
-										 				<td>Santa Rosa</td>
-										 			</tr>
-										 			<tr>
-										 				<td>
-										 					<strong>SALA:</strong>
-										 				</td>
-										 				<td>Orquidea</td>
-										 			</tr>
-										 			<tr>
-										 				<td>
-										 					<strong>EXEQUIAS:</strong>
-										 				</td>
-										 				<td>Basilica menor señor de las victorias</td>
-										 			</tr>
-										 			<tr>
-										 				<td>
-										 					<strong>FECHA:</strong>
-										 				</td>
-										 				<td>8 de noviembre 2017</td>
-										 			</tr>
-										 			<tr>
-										 				<td>
-										 					<strong>HORA:</strong>
-										 				</td>
-										 				<td>03:00 pm</td>
-										 			</tr>
-										 			<tr>
-										 				<td>
-										 					<strong>DESTINO FINAL:</strong>
-										 				</td>
-										 				<td>Parque cementerio los jazmines</td>
-										 			</tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+										  </tr>
 										</tbody>
 									</table>
 									
 								</div>
-							</div>	
-							<div class="col-sm-6">	
-								<div class="table-success">
-									<div class="table-header">
-										<div class="table-caption">
-											MARIA CARDONA LONDOÑO
-										</div>
-									</div>
-									<table class="table table-bordered">
-										
-										<tbody>
-											<tr>
-										 				<td>
-										 					<strong>CIUDAD:</strong>
-										 				</td>
-										 				<td>Santa Rosa</td>
-										 			</tr>
-										 			<tr>
-										 				<td>
-										 					<strong>SALA:</strong>
-										 				</td>
-										 				<td>Orquidea</td>
-										 			</tr>
-										 			<tr>
-										 				<td>
-										 					<strong>EXEQUIAS:</strong>
-										 				</td>
-										 				<td>Basilica menor señor de las victorias</td>
-										 			</tr>
-										 			<tr>
-										 				<td>
-										 					<strong>FECHA:</strong>
-										 				</td>
-										 				<td>8 de noviembre 2017</td>
-										 			</tr>
-										 			<tr>
-										 				<td>
-										 					<strong>HORA:</strong>
-										 				</td>
-										 				<td>03:00 pm</td>
-										 			</tr>
-										 			<tr>
-										 				<td>
-										 					<strong>DESTINO FINAL:</strong>
-										 				</td>
-										 				<td>Parque cementerio los jazmines</td>
-										 			</tr>
-										</tbody>
-									</table>
-									
-								</div>
-							</div>
+
 		<!-- Content here -->
 		
 
@@ -540,9 +499,7 @@ Use search to find needed section.
 </div> <!-- / #main-wrapper -->
 
 <!-- Get jQuery from Google CDN -->
-<!--[if !IE]> -->
-	<script type="text/javascript"> window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js">'+"<"+"/script>"); </script>
-<!-- <![endif]-->
+
 <!--[if lte IE 9]>
 	<script type="text/javascript"> window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">'+"<"+"/script>"); </script>
 <![endif]-->

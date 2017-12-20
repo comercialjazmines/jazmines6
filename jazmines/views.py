@@ -67,7 +67,7 @@ def actualizar_noticias(request):
     return render(request, 'actualizar_noticias.html')
 
 def agregar_obituarios(request):
-    return render(request, 'actualizar_noticias.html')
+    return render(request, 'agregar_obituarios.html')
 
 def agregar_eventos(request):
     return render(request, 'agregar_eventos.html')
@@ -83,6 +83,9 @@ def modificar_eventos(request):
 
 def modificar_obituarios(request):
     return render(request, 'modificar_obituarios.html')
+
+def agregar_usuario(request):
+    return render(request, 'agregar_usuario.html')
 
 
 
